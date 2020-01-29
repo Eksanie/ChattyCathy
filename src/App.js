@@ -25,8 +25,8 @@ function Room(props) {
       <div className="logo-wrap">
         <img className="logo"
           alt="logo"
-          src="http://cdn.bleacherreport.net/images_root/slides/photos/000/462/711/62wash_display_image.jpg?1287961269"/>
-        Chatter
+          src="https://icon.community/static/iconsensus/img/logos/og-img_1.png"/>
+        ChattyCathy
       </div>
       <NamePicker onSave={setName} />
     </header>

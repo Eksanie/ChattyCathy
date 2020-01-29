@@ -12,9 +12,9 @@ body{
   display:flex;
   align-items:center;
   justify-content:center;
-  background:linear-gradient(145deg, #348f50, #56b4d3);
-  background-color:#56b4d3;  
-  color:black;
+  background:linear-gradient(145deg, #348f87, #a5f1d8);
+  background-color:#a5f1d8;  
+  color:white;
 }
 
 .main-title{
@@ -28,7 +28,7 @@ header{
   width:100%;
   height:48px;
   border-bottom:1px solid white;
-  color:#2674a3;
+  color:#1f1e2e;
   padding: 0px 10px;
   background:rgba(255,255,255,0.5);
 
@@ -70,7 +70,7 @@ header{
   width: calc(100% - 37px);
 }
 .text-input:focus{
-  border: 1px solid blue;
+  border: 1px solid silver;
   background: rgb(240,240,255);
 }
 .button:hover{
@@ -122,8 +122,8 @@ header{
   padding: 0 10px;
 }
 .msg-text{
-  color:white;
-  background:black;
+  color:black;
+  background:white;
   margin:5px;
   border-radius:5px;
   padding:3px 6px;
