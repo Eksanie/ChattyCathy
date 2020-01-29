@@ -1,26 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <main>
+
+
+    <header>  
+
+    <img src= "http://cdn.bleacherreport.net/images_root/slides/photos/000/462/711/62wash_display_image.jpg?1287961269"/>
+    
+    Chatter 
+    </header>
+  
+    <TextInput onSend={m=> console.log(m)} />
+
+  </main>
+}
+
+function TextInput(props){
+  var [text, setText] = useState('')
+  return <div className = "text-input">
+  <input value = {text} 
+    placeholder = "write your message"
+    onChange = {e => setText(e.target.value)}
+  
+  />
+  <button onClick={() => {
+  props.onSend(text)
+  setText('')
+  }}>
+  SEND
+  </button>
+
+  </div>
 }
 
 export default App;
