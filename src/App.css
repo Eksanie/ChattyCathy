@@ -173,3 +173,6 @@ header{
   margin-right:12px;
   font-size:1.1rem;
 }
+.text-input > input{
+  width:calc(100% - 50px);
+}
