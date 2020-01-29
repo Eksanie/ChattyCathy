@@ -1,7 +1,7 @@
 import React, {useState,useEffect} from 'react';
 import './App.css';
 import {db, useDB} from './db'
-import NamePicker from './namePicker'
+import NamePicker from './NamePicker'
 import { BrowserRouter, Route } from 'react-router-dom'
 
 function App(){
